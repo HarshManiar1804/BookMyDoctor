@@ -42,49 +42,22 @@ The Online Appointment Booking System is a web application designed to streamlin
    cd client && npm install
    ```
 
-3. **Set up environment variables:**
-   - Create a `.env` file in the root directory.
-   - Add the following variables:
-     ```env
-     MONGO_URI=<your-mongodb-connection-string>
-     PORT=<your-preferred-port>
-     JWT_SECRET=<your-jwt-secret>
-     ```
-
-4. **Run the application:**
+3. **Run the application:**
    - Start the backend server:
      ```bash
+     cd backend
      npm start
      ```
    - Start the frontend development server:
      ```bash
-     cd client
+     cd frontend
+     npm start
+     ```
+     
+   - Start the admin development server:
+     ```bash
+     cd admin
      npm start
      ```
 
-5. **Access the application:**
-   - Navigate to `http://localhost:3000` in your browser.
-
-## Folder Structure
-```
-├── client                # React JS frontend
-├── server                # Node JS and Express backend
-├── models                # MongoDB schemas
-├── routes                # API routes
-├── controllers           # Logic for handling requests
-├── middleware            # Authentication and other middleware
-├── utils                 # Utility functions
-└── README.md             # Project documentation
-```
-
-## Future Improvements
-- Add notifications for appointment reminders.
-- Implement payment integration for online consultations.
-- Enhance the search functionality with filters like location and availability.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contact
-For any queries or contributions, feel free to reach out via [your-email@example.com].
 
