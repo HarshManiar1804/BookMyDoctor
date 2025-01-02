@@ -14,7 +14,6 @@ const Login = () => {
 
   const { setDToken } = useContext(DoctorContext);
   const { setAToken } = useContext(AdminContext);
-
   const onSubmitHandler = async (event) => {
     event.preventDefault();
 
